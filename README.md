@@ -36,3 +36,5 @@ docchat> what is russia's population?
 result= According to the text, Russia's population is 145.6 million (as of July 2022 census), with an estimated decline to 143 million by 2036.
 ```
 Some of the information got lost when we split the chunks for processing and the pick out bits of information
+
+<p align="center"><img src="/img/demo.gif?raw=true"/></p>
