@@ -37,4 +37,4 @@ result= According to the text, Russia's population is 145.6 million (as of July 
 ```
 Some of the information got lost when we split the chunks for processing and the pick out bits of information
 
-<p align="center"><img src="/img/demo.gif?raw=true"/></p>
+<p align="center"><img src="/demo.gif?raw=true"/></p>
