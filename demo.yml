@@ -1,0 +1,563 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\ma386\CS40 projects\docchat
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 201
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 31
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 845
+    content: "\e[?9001h\e[?1004h"
+  - delay: 165
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 10
+    content: "\e[?25l\e[6;1H\e[?25h"
+  - delay: 215
+    content: 'PS C:\Users\ma386\CS40 projects\docchat> '
+  - delay: 6417
+    content: "\e[?25l"
+  - delay: 14
+    content: "\e[93m/Users/ma386/AppData/Local/Microsoft/WindowsApps/python3.12.exe \e[36m\"c:/Users/ma386/CS40 projects/docchat/testing.py\"\e[?25h"
+  - delay: 230
+    content: "\e[m"
+  - delay: 17
+    content: "\r\n"
+  - delay: 2288
+    content: 'docchat> '
+  - delay: 10
+    content: "\e[?25l\rdocchat>\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;10H\e[?25h"
+  - delay: 5821
+    content: "\e[?25l"
+  - delay: 24
+    content: "\rdocchat> f\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;11H\e[?25h"
+  - delay: 235
+    content: "\e[?25l"
+  - delay: 18
+    content: "\rdocchat> fi\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;12H\e[?25h"
+  - delay: 254
+    content: "\e[?25l"
+  - delay: 14
+    content: "\rdocchat> fil\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;13H\e[?25h"
+  - delay: 211
+    content: "\e[?25l"
+  - delay: 20
+    content: "\rdocchat> file\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;14H\e[?25h"
+  - delay: 799
+    content: "\e[?25l"
+  - delay: 9
+    content: "\rdocchat> file:\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;15H\e[?25h"
+  - delay: 1369
+    content: "\e[?25l"
+  - delay: 23
+    content: "\rdocchat> file:d\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;16H\e[?25h"
+  - delay: 226
+    content: "\e[?25l"
+  - delay: 23
+    content: "\rdocchat> file:do\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;17H\e[?25h"
+  - delay: 309
+    content: "\e[?25l"
+  - delay: 18
+    content: "\rdocchat> file:doc\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;18H\e[?25h"
+  - delay: 206
+    content: "\e[?25l"
+  - delay: 13
+    content: "\rdocchat> file:docs\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;19H\e[?25h"
+  - delay: 389
+    content: "\e[?25l"
+  - delay: 15
+    content: "\rdocchat> file:docs/\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;20H\e[?25h"
+  - delay: 427
+    content: "\e[?25l"
+  - delay: 14
+    content: "\rdocchat> file:docs/r\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;21H\e[?25h"
+  - delay: 291
+    content: "\e[?25l"
+  - delay: 22
+    content: "\rdocchat> file:docs/re\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;22H\e[?25h"
+  - delay: 244
+    content: "\e[?25l"
+  - delay: 22
+    content: "\rdocchat> file:docs/res\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;23H\e[?25h"
+  - delay: 225
+    content: "\e[?25l"
+  - delay: 24
+    content: "\rdocchat> file:docs/rese\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;24H\e[?25h"
+  - delay: 245
+    content: "\e[?25l"
+  - delay: 19
+    content: "\rdocchat> file:docs/resea\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;25H\e[?25h"
+  - delay: 273
+    content: "\e[?25l"
+  - delay: 23
+    content: "\rdocchat> file:docs/resear\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;26H\e[?25h"
+  - delay: 271
+    content: "\e[?25l"
+  - delay: 14
+    content: "\rdocchat> file:docs/researc\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;27H\e[?25h"
+  - delay: 235
+    content: "\e[?25l"
+  - delay: 11
+    content: "\rdocchat> file:docs/research\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;28H\e[?25h"
+  - delay: 731
+    content: "\e[?25l"
+  - delay: 18
+    content: "\rdocchat> file:docs/research_\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;29H\e[?25h"
+  - delay: 414
+    content: "\e[?25l"
+  - delay: 20
+    content: "\rdocchat> file:docs/research_p\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;30H\e[?25h"
+  - delay: 166
+    content: "\e[?25l"
+  - delay: 19
+    content: "\rdocchat> file:docs/research_pa\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;31H\e[?25h"
+  - delay: 249
+    content: "\e[?25l"
+  - delay: 21
+    content: "\rdocchat> file:docs/research_pap\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;32H\e[?25h"
+  - delay: 232
+    content: "\e[?25l"
+  - delay: 20
+    content: "\rdocchat> file:docs/research_pape\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;33H\e[?25h"
+  - delay: 115
+    content: "\e[?25l"
+  - delay: 19
+    content: "\rdocchat> file:docs/research_paper\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;34H\e[?25h"
+  - delay: 707
+    content: "\e[?25l"
+  - delay: 10
+    content: "\rdocchat> file:docs/research_paper.\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;35H\e[?25h"
+  - delay: 352
+    content: "\e[?25l"
+  - delay: 21
+    content: "\rdocchat> file:docs/research_paper.p\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;36H\e[?25h"
+  - delay: 279
+    content: "\e[?25l"
+  - delay: 22
+    content: "\rdocchat> file:docs/research_paper.pd\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;37H\e[?25h"
+  - delay: 300
+    content: "\e[?25l"
+  - delay: 23
+    content: "\rdocchat> file:docs/research_paper.pdf\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[7;38H\e[?25h"
+  - delay: 715
+    content: "\e[?25l"
+  - delay: 19
+    content: "\rdocchat> file:docs/research_paper.pdf\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[8;1H\e[?25h"
+  - delay: 220
+    content: "Document loaded successfully.\r\n"
+  - delay: 92338
+    content: "Relevant chunks identified and added to the conversation.\r\n"
+  - delay: 24
+    content: "\e[?25ldocchat>\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;10H\e[?25h"
+  - delay: 5710
+    content: "\e[?25l"
+  - delay: 23
+    content: "\rdocchat> s\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;11H\e[?25h"
+  - delay: 150
+    content: "\e[?25l"
+  - delay: 24
+    content: "\rdocchat> su\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;12H\e[?25h"
+  - delay: 245
+    content: "\e[?25l"
+  - delay: 20
+    content: "\rdocchat> sum\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;13H\e[?25h"
+  - delay: 157
+    content: "\e[?25l"
+  - delay: 16
+    content: "\rdocchat> summ\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;14H\e[?25h"
+  - delay: 281
+    content: "\e[?25l"
+  - delay: 23
+    content: "\rdocchat> summa\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;15H\e[?25h"
+  - delay: 175
+    content: "\e[?25l"
+  - delay: 23
+    content: "\rdocchat> summar\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;16H\e[?25h"
+  - delay: 151
+    content: "\e[?25l"
+  - delay: 10
+    content: "\rdocchat> summari\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;17H\e[?25h"
+  - delay: 150
+    content: "\e[?25l"
+  - delay: 14
+    content: "\rdocchat> summariz\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;18H\e[?25h"
+  - delay: 68
+    content: "\e[?25l"
+  - delay: 11
+    content: "\rdocchat> summarize\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;19H\e[?25h"
+  - delay: 122
+    content: "\e[?25l"
+  - delay: 18
+    content: "\rdocchat> summarize\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;20H\e[?25h"
+  - delay: 105
+    content: "\e[?25l"
+  - delay: 18
+    content: "\rdocchat> summarize t\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;21H\e[?25h"
+  - delay: 98
+    content: "\e[?25l"
+  - delay: 12
+    content: "\rdocchat> summarize th\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;22H\e[?25h"
+  - delay: 62
+    content: "\e[?25l"
+  - delay: 15
+    content: "\rdocchat> summarize the\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;23H\e[?25h"
+  - delay: 115
+    content: "\e[?25l"
+  - delay: 10
+    content: "\rdocchat> summarize the\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;24H\e[?25h"
+  - delay: 97
+    content: "\e[?25l"
+  - delay: 13
+    content: "\rdocchat> summarize the a\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;25H\e[?25h"
+  - delay: 117
+    content: "\e[?25l"
+  - delay: 24
+    content: "\rdocchat> summarize the ab\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;26H\e[?25h"
+  - delay: 92
+    content: "\e[?25l"
+  - delay: 17
+    content: "\rdocchat> summarize the abs\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;27H\e[?25h"
+  - delay: 189
+    content: "\e[?25l"
+  - delay: 13
+    content: "\rdocchat> summarize the abst\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;28H\e[?25h"
+  - delay: 459
+    content: "\e[?25l"
+  - delay: 23
+    content: "\rdocchat> summarize the abstr\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;29H\e[?25h"
+  - delay: 121
+    content: "\e[?25l"
+  - delay: 17
+    content: "\rdocchat> summarize the abstra\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;30H\e[?25h"
+  - delay: 126
+    content: "\e[?25l"
+  - delay: 16
+    content: "\rdocchat> summarize the abstrac\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;31H\e[?25h"
+  - delay: 57
+    content: "\e[?25l"
+  - delay: 18
+    content: "\rdocchat> summarize the abstract\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[10;32H\e[?25h"
+  - delay: 701
+    content: "\e[?25l"
+  - delay: 10
+    content: "\rdocchat> summarize the abstract\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[11;1H\e[?25h"
+  - delay: 5431
+    content: "result= The abstract discusses a new pretraining method, DOCSPLIT, that uses a contrastive objective and outperforms the current state-of-the-art model, INSTRUCTOR, on document-level tasks. The current models are limited by the attention mechanism's quadratic scaling with document length, but new architectures like LongFormer and BigBird have been proposed to address this issue.\r\n"
+  - delay: 38
+    content: "[{'content': 'You are a helpful assistant. You are trying to be accurate. You '\r\n\e[13X\e[13C'can answer up to 4 sentences.',\r\n  'role': 'system'},\r\n {'content': 'Relevant Chunk: INSTRUCTOR model (Su et al., 2022) is the '\r\n             'current state-of-the-art model for most downstream tasks. The '\r\n             'contrastive objective for this model requires a specially '\r\n             'constructed corpus of manual-human annotations, and this corpus '\r\n             'is limited only to sentence-level annotations instead of '\r\n             'document-level annotations. We show that our model significantly '\r\n             'improves on INSTRUCTOR on document level tasks, and it is not '\r\n             'clear how to ex- tend the INSTRUCTOR model to document-level '\r\n             'tasks because human annotation for documents is significantly '\r\n             'more expensive than for sentences. The Contriever model (Izacard '\r\n             'et al., 2021) uses a contrastive objective most similar to our '\r\n             'own. They use',\r\n  'role': 'user'},\r\n {'content': 'Relevant Chunk: and run- time, where nis the size of the '\r\n             'attention window. The maximum size of a document that a model '\r\n             'can understand is limited by this window size, and so compute '\r\n             'for these models scales quadratically with the length of the '\r\n             'documents.14191 A growing body of research focuses on develop- '\r\n             'ing new architectures with reduced computational requirements '\r\n             'that enable processing larger docu- ments. The LongFormer '\r\n             '(Beltagy et al., 2020) and BigBird (Zaheer et al., 2020) models '\r\n             'pioneered this line of research, and both models reduce the run- '\r\n             'time of the attention mechanism to O(n). A variety of other '\r\n             'architectures have',\r\n  'role': 'user'},\r\n {'content': 'Relevant Chunk: the document cropping and inverse cloze tasks '\r\n             'for pretraining. In document cropping, a doc- ument is divided '\r\n             'in half and the two halves are used as the positive samples; in '\r\n             'inverse cloze, a contiguous substring of the document is used as '\r\n             'one positive sample and all other strings are used as the '\r\n             'negative sample. The DOCSPLIT pretraining method can be seen as '\r\n             'a generalization of these methods. 3.2 Large Document '\r\n             'Architectures All of the models discussed in Section 3.1 above '\r\n             'are based off of the BERT architecture (Devlin et al., 2019). '\r\n             'This architecture uses an attention mechanism that requires '\r\n             'O(n2)memory',\r\n  'role': 'user'},\r\n {'content': 'Relevant Chunk: as the negative sample. The DOCSPLIT pretraining '\r\n             'method can be seen as a generalization of these methods. 3.2 '\r\n             'Large Document Architectures All of the models discussed in '\r\n             'Section 3.1 above are based off of the BERT architecture (Devlin '\r\n             'et al., 2019). This architecture uses an attention mechanism '\r\n             'that requires O(n2)memory and run- time, where nis the size of '\r\n             'the attention window. The maximum size of a document that a '\r\n             'model can understand is limited by this window size, and so '\r\n             'compute for these models scales quadratically with the length of '\r\n             'the documents.14191 A growing body of research focuses on '\r\n             'develop-',\r\n  'role': 'user'},\r\n {'content': 'Relevant Chunk: ing new architectures with reduced computational '\r\n             'requirements that enable processing larger docu- ments. The '\r\n             'LongFormer (Beltagy et al., 2020) and BigBird (Zaheer et al., '\r\n             '2020) models pioneered this line of research, and both models '\r\n             'reduce the run- time of the attention mechanism to O(n). A '\r\n             'variety of other architectures have subsequently been pro- posed '\r\n             '(e.g. ????? ).?provide a survey of this large body of work. '\r\n             'Importantly, all of this research fo- cuses only on improving '\r\n             'the computational aspects of model architecture, and none of '\r\n             'these models use a training objective designed specifically for '\r\n             'large documents. Because the DOCSPLIT pretrain- ing',\r\n  'role': 'user'},\r\n {'content': 'summarize the abstract', 'role': 'user'},\r\n {'content': 'The abstract discusses a new pretraining method, DOCSPLIT, that '\r\n             'uses a contrastive objective and outperforms the current '\r\n             'state-of-the-art model, INSTRUCTOR, on document-level tasks. The '\r\n             \"current models are limited by the attention mechanism's \"\r\n             'quadratic scaling with document length, but new architectures '\r\n             'like LongFormer and BigBird have been proposed to address this '\r\n             'issue.',\r\n  'role': 'assistant'}]\r"
+  - delay: 14
+    content: "\e[?25l\n\e[H             'et al., 2019). This architecture uses an attention mechanism '\e[K\r\n             'that requires O(n2)memory and run- time, where nis the size of '\e[K\r\n             'the attention window. The maximum size of a document that a '\e[K\r\n             'model can understand is limited by this window size, and so '\e[K\r\n             'compute for these models scales quadratically with the length of '\e[K\r\n             'the documents.14191 A growing body of research focuses on '\e[K\r\n             'develop-',\e[K\r\n  'role': 'user'},\e[K\r\n {'content': 'Relevant Chunk: ing new architectures with reduced computational '\e[K\r\n             'requirements that enable processing larger docu- ments. The '\e[K\r\n             'LongFormer (Beltagy et al., 2020) and BigBird (Zaheer et al., '\e[K\r\n             '2020) models pioneered this line of research, and both models '\e[K\r\n             'reduce the run- time of the attention mechanism to O(n). A '\e[K\r\n             'variety of other architectures have subsequently been pro- posed '\e[K\r\n             '(e.g. ????? ).?provide a survey of this large body of work. '\e[K\r\n             'Importantly, all of this research fo- cuses only on improving '\e[K\r\n             'the computational aspects of model architecture, and none of '\e[K\r\n             'these models use a training objective designed specifically for '\e[K\r\n             'large documents. Because the DOCSPLIT pretrain- ing',\e[K\r\n  'role': 'user'},\e[K\r\n {'content': 'summarize the abstract', 'role': 'user'},\e[K\r\n {'content': 'The abstract discusses a new pretraining method, DOCSPLIT, that '\e[K\r\n             'uses a contrastive objective and outperforms the current '\e[K\r\n             'state-of-the-art model, INSTRUCTOR, on document-level tasks. The '\e[K\r\n             \"current models are limited by the attention mechanism's \"\e[K\r\n             'quadratic scaling with document length, but new architectures '\e[K\r\n             'like LongFormer and BigBird have been proposed to address this '\e[K\r\n             'issue.',\e[K\r\n  'role': 'assistant'}]\e[K\r\ndocchat>\e[K\r\n\e[K\e[30;10H\e[?25h"
+  - delay: 13155
+    content: "\e[?25l"
+  - delay: 15
+    content: "\rdocchat> w\e[K\r\n\e[K\e[30;11H\e[?25h"
+  - delay: 73
+    content: "\e[?25l"
+  - delay: 21
+    content: "\rdocchat> wh\e[K\r\n\e[K\e[30;12H\e[?25h"
+  - delay: 119
+    content: "\e[?25l"
+  - delay: 20
+    content: "\rdocchat> wha\e[K\r\n\e[K\e[30;13H\e[?25h"
+  - delay: 228
+    content: "\e[?25l"
+  - delay: 23
+    content: "\rdocchat> what\e[K\r\n\e[K\e[30;14H\e[?25h"
+  - delay: 103
+    content: "\e[?25l"
+  - delay: 23
+    content: "\rdocchat> what\e[K\r\n\e[K\e[30;15H\e[?25h"
+  - delay: 1130
+    content: "\e[?25l"
+  - delay: 19
+    content: "\rdocchat> what i\e[K\r\n\e[K\e[30;16H\e[?25h"
+  - delay: 109
+    content: "\e[?25l"
+  - delay: 15
+    content: "\rdocchat> what is\e[K\r\n\e[K\e[30;17H\e[?25h"
+  - delay: 107
+    content: "\e[?25l"
+  - delay: 17
+    content: "\rdocchat> what is\e[K\r\n\e[K\e[30;18H\e[?25h"
+  - delay: 143
+    content: "\e[?25l"
+  - delay: 13
+    content: "\rdocchat> what is t\e[K\r\n\e[K\e[30;19H\e[?25h"
+  - delay: 51
+    content: "\e[?25l"
+  - delay: 10
+    content: "\rdocchat> what is th\e[K\r\n\e[K\e[30;20H\e[?25h"
+  - delay: 99
+    content: "\e[?25l"
+  - delay: 11
+    content: "\rdocchat> what is the\e[K\r\n\e[K\e[30;21H\e[?25h"
+  - delay: 82
+    content: "\e[?25l"
+  - delay: 10
+    content: "\rdocchat> what is the\e[K\r\n\e[K\e[30;22H\e[?25h"
+  - delay: 211
+    content: "\e[?25l"
+  - delay: 9
+    content: "\rdocchat> what is the m\e[K\r\n\e[K\e[30;23H\e[?25h"
+  - delay: 98
+    content: "\e[?25l"
+  - delay: 11
+    content: "\rdocchat> what is the ma\e[K\r\n\e[K\e[30;24H\e[?25h"
+  - delay: 138
+    content: "\e[?25l"
+  - delay: 21
+    content: "\rdocchat> what is the mai\e[K\r\n\e[K\e[30;25H\e[?25h"
+  - delay: 42
+    content: "\e[?25l"
+  - delay: 22
+    content: "\rdocchat> what is the main\e[K\r\n\e[K\e[30;26H\e[?25h"
+  - delay: 189
+    content: "\e[?25l"
+  - delay: 11
+    content: "\rdocchat> what is the main\e[K\r\n\e[K\e[30;27H\e[?25h"
+  - delay: 87
+    content: "\e[?25l"
+  - delay: 20
+    content: "\rdocchat> what is the main t\e[K\r\n\e[K\e[30;28H\e[?25h"
+  - delay: 87
+    content: "\e[?25l"
+  - delay: 23
+    content: "\rdocchat> what is the main ta\e[K\r\n\e[K\e[30;29H\e[?25h"
+  - delay: 141
+    content: "\e[?25l"
+  - delay: 16
+    content: "\rdocchat> what is the main tak\e[K\r\n\e[K\e[30;30H\e[?25h"
+  - delay: 79
+    content: "\e[?25l"
+  - delay: 13
+    content: "\rdocchat> what is the main take\e[K\r\n\e[K\e[30;31H\e[?25h"
+  - delay: 538
+    content: "\e[?25l"
+  - delay: 20
+    content: "\rdocchat> what is the main takea\e[K\r\n\e[K\e[30;32H\e[?25h"
+  - delay: 139
+    content: "\e[?25l"
+  - delay: 17
+    content: "\rdocchat> what is the main takeaw\e[K\r\n\e[K\e[30;33H\e[?25h"
+  - delay: 135
+    content: "\e[?25l"
+  - delay: 21
+    content: "\rdocchat> what is the main takeawa\e[K\r\n\e[K\e[30;34H\e[?25h"
+  - delay: 109
+    content: "\e[?25l"
+  - delay: 17
+    content: "\rdocchat> what is the main takeaway\e[K\r\n\e[K\e[30;35H\e[?25h"
+  - delay: 718
+    content: "\e[?25l"
+  - delay: 13
+    content: "\rdocchat> what is the main takeaway\e[K\r\n\e[K\e[30;36H\e[?25h"
+  - delay: 111
+    content: "\e[?25l"
+  - delay: 13
+    content: "\rdocchat> what is the main takeaway f\e[K\r\n\e[K\e[30;37H\e[?25h"
+  - delay: 158
+    content: "\e[?25l"
+  - delay: 15
+    content: "\rdocchat> what is the main takeaway fr\e[K\r\n\e[K\e[30;38H\e[?25h"
+  - delay: 29
+    content: "\e[?25l"
+  - delay: 18
+    content: "\rdocchat> what is the main takeaway fro\e[K\r\n\e[K\e[30;39H\e[?25h"
+  - delay: 77
+    content: "\e[?25l"
+  - delay: 17
+    content: "\rdocchat> what is the main takeaway from\e[K\r\n\e[K\e[30;40H\e[?25h"
+  - delay: 184
+    content: "\e[?25l"
+  - delay: 19
+    content: "\rdocchat> what is the main takeaway from\e[K\r\n\e[K\e[30;41H\e[?25h"
+  - delay: 79
+    content: "\e[?25l"
+  - delay: 14
+    content: "\rdocchat> what is the main takeaway from t\e[K\r\n\e[K\e[30;42H\e[?25h"
+  - delay: 96
+    content: "\e[?25l"
+  - delay: 12
+    content: "\rdocchat> what is the main takeaway from th\e[K\r\n\e[K\e[30;43H\e[?25h"
+  - delay: 40
+    content: "\e[?25l"
+  - delay: 24
+    content: "\rdocchat> what is the main takeaway from thi\e[K\r\n\e[K\e[30;44H\e[?25h"
+  - delay: 52
+    content: "\e[?25l"
+  - delay: 9
+    content: "\rdocchat> what is the main takeaway from this\e[K\r\n\e[K\e[30;45H\e[?25h"
+  - delay: 135
+    content: "\e[?25l"
+  - delay: 22
+    content: "\rdocchat> what is the main takeaway from this\e[K\r\n\e[K\e[30;46H\e[?25h"
+  - delay: 176
+    content: "\e[?25l"
+  - delay: 13
+    content: "\rdocchat> what is the main takeaway from this p\e[K\r\n\e[K\e[30;47H\e[?25h"
+  - delay: 88
+    content: "\e[?25l"
+  - delay: 19
+    content: "\rdocchat> what is the main takeaway from this pa\e[K\r\n\e[K\e[30;48H\e[?25h"
+  - delay: 100
+    content: "\e[?25l"
+  - delay: 9
+    content: "\rdocchat> what is the main takeaway from this pap\e[K\r\n\e[K\e[30;49H\e[?25h"
+  - delay: 132
+    content: "\e[?25l"
+  - delay: 23
+    content: "\rdocchat> what is the main takeaway from this pape\e[K\r\n\e[K\e[30;50H\e[?25h"
+  - delay: 35
+    content: "\e[?25l"
+  - delay: 12
+    content: "\rdocchat> what is the main takeaway from this paper\e[K\r\n\e[K\e[30;51H\e[?25h"
+  - delay: 634
+    content: "\e[?25l"
+  - delay: 20
+    content: "\rdocchat> what is the main takeaway from this paper\e[K\r\n\e[K\e[?25h"
+  - delay: 1008
+    content: "result= The main takeaway from this paper is that the authors introduce a new pretraining method called DOCSPLIT, which is capable of handling large documents and outperforms existing state-of-the-art \r\n\e[30;201H models on document-level tasks.\r\n[{'content': 'You are a helpful assistant. You are trying to be accurate. You '\r\n             'can answer up to 4 sentences.',\r\n  'role': 'system'},\r\n {'content': 'Relevant Chunk: INSTRUCTOR model (Su et al., 2022) is the '\r\n             'current state-of-the-art model for most downstream tasks. The '\r\n             'contrastive objective for this model requires a specially '\r\n             'constructed corpus of manual-human annotations, and this corpus '\r\n             'is limited only to sentence-level annotations instead of '\r\n             'document-level annotations. We show that our model significantly '\r\n             'improves on INSTRUCTOR on document level tasks, and it is not '\r\n             'clear how to ex- tend the INSTRUCTOR model to document-level '\r\n             'tasks because human annotation for documents is significantly '\r\n             'more expensive than for sentences. The Contriever model (Izacard '\r\n             'et al., 2021) uses a contrastive objective most similar to our '\r\n             'own. They use',\r\n  'role': 'user'},\r\n {'content': 'Relevant Chunk: and run- time, where nis the size of the '\r\n             'attention window. The maximum size of a document that a model '\r\n             'can understand is limited by this window size, and so compute '\r\n             'for these models scales quadratically with the length of the '\r\n             'documents.14191 A growing body of research focuses on develop- '\r\n             'ing new architectures with reduced computational requirements '\r\n             'that enable processing larger docu- ments. The LongFormer '\r\n             '(Beltagy et al., 2020) and BigBird (Zaheer et al., 2020) models '\r\n             'pioneered this line of research, and both models reduce the run- '\r\n             'time of the attention mechanism to O(n). A variety of other '\r\n             'architectures have',\r\n  'role': 'user'},\r\n {'content': 'Relevant Chunk: the document cropping and inverse cloze tasks '\r\n             'for pretraining. In document cropping, a doc- ument is divided '\r\n             'in half and the two halves are used as the positive samples; in '\r\n             'inverse cloze, a contiguous substring of the document is used as '\r\n             'one positive sample and all other strings are used as the '\r\n             'negative sample. The DOCSPLIT pretraining method can be seen as '\r\n             'a generalization of these methods. 3.2 Large Document '\r\n             'Architectures All of the models discussed in Section 3.1 above '\r\n             'are based off of the BERT architecture (Devlin et al., 2019). '\r\n             'This architecture uses an attention mechanism that requires '\r\n             'O(n2)memory',\r\n  'role': 'user'},\r\n {'content': 'Relevant Chunk: as the negative sample. The DOCSPLIT pretraining '\r\n             'method can be seen as a generalization of these methods. 3.2 '\r\n             'Large Document Architectures All of the models discussed in '\r\n             'Section 3.1 above are based off of the BERT architecture (Devlin '\r\n             'et al., 2019). This architecture uses an attention mechanism '\r\n             'that requires O(n2)memory and run- time, where nis the size of '\r\n             'the attention window. The maximum size of a document that a '\r\n             'model can understand is limited by this window size, and so '\r\n             'compute for these models scales quadratically with the length of '\r\n             'the documents.14191 A growing body of research focuses on '\r\n             'develop-',\r\n  'role': 'user'},\r\n {'content': 'Relevant Chunk: ing new architectures with reduced computational '\r\n             'requirements that enable processing larger docu- ments. The '\r\n             'LongFormer (Beltagy et al., 2020) and BigBird (Zaheer et al., '\r\n             '2020) models pioneered this line of research, and both models '\r\n             'reduce the run- time of the attention mechanism to O(n). A '\r\n             'variety of other architectures have subsequently been pro- posed '\r\n             '(e.g. ????? ).?provide a survey of this large body of work. '\r\n             'Importantly, all of this research fo- cuses only on improving '\r\n             'the computational aspects of model architecture, and none of '\r\n             'these models use a training objective designed specifically for '\r\n             'large documents. Because the DOCSPLIT pretrain- ing',\r\n  'role': 'user'},\r\n {'content': 'summarize the abstract', 'role': 'user'},\r\n {'content': 'The abstract discusses a new pretraining method, DOCSPLIT, that '\r\n             'uses a contrastive objective and outperforms the current '\r\n             'state-of-the-art model, INSTRUCTOR, on document-level tasks. The '\r\n             \"current models are limited by the attention mechanism's \"\r\n             'quadratic scaling with document length, but new architectures '\r\n             'like LongFormer and BigBird have been proposed to address this '\r\n             'issue.',\r\n  'role': 'assistant'},\r\n {'content': 'what is the main takeaway from this paper', 'role': 'user'},\r\n {'content': 'The main takeaway from this paper is that the authors introduce '\r\n             'a new pretraining method called DOCSPLIT, which is capable of '\r\n             'handling large documents and outperforms existing '\r\n             'state-of-the-art models on document-level tasks.',\r\n  'role': 'assistant'}]\r"
+  - delay: 5
+    content: "\e[?25l\n\e[H             'develop-',\e[K\r\n  'role': 'user'},\e[K\r\n {'content': 'Relevant Chunk: ing new architectures with reduced computational '\e[K\r\n             'requirements that enable processing larger docu- ments. The '\e[K\r\n             'LongFormer (Beltagy et al., 2020) and BigBird (Zaheer et al., '\e[K\r\n             '2020) models pioneered this line of research, and both models '\e[K\r\n             'reduce the run- time of the attention mechanism to O(n). A '\e[K\r\n             'variety of other architectures have subsequently been pro- posed '\e[K\r\n             '(e.g. ????? ).?provide a survey of this large body of work. '\e[K\r\n             'Importantly, all of this research fo- cuses only on improving '\e[K\r\n             'the computational aspects of model architecture, and none of '\e[K\r\n             'these models use a training objective designed specifically for '\e[K\r\n             'large documents. Because the DOCSPLIT pretrain- ing',\e[K\r\n  'role': 'user'},\e[K\r\n {'content': 'summarize the abstract', 'role': 'user'},\e[K\r\n {'content': 'The abstract discusses a new pretraining method, DOCSPLIT, that '\e[K\r\n             'uses a contrastive objective and outperforms the current '\e[K\r\n             'state-of-the-art model, INSTRUCTOR, on document-level tasks. The '\e[K\r\n             \"current models are limited by the attention mechanism's \"\e[K\r\n             'quadratic scaling with document length, but new architectures '\e[K\r\n             'like LongFormer and BigBird have been proposed to address this '\e[K\r\n             'issue.',\e[K\r\n  'role': 'assistant'},\e[K\r\n {'content': 'what is the main takeaway from this paper', 'role': 'user'},\e[K\r\n {'content': 'The main takeaway from this paper is that the authors introduce '\e[K\r\n             'a new pretraining method called DOCSPLIT, which is capable of '\e[K\r\n             'handling large documents and outperforms existing '\e[K\r\n             'state-of-the-art models on document-level tasks.',\e[K\r\n  'role': 'assistant'}]\e[K\r\ndocchat>\e[K\r\n\e[K\e[30;10H\e[?25h"
+  - delay: 5091
+    content: "\e[?25l"
+  - delay: 21
+    content: "\rdocchat> e\e[K\r\n\e[K\e[30;11H\e[?25h"
+  - delay: 483
+    content: "\e[?25l"
+  - delay: 12
+    content: "\rdocchat> ex\e[K\r\n\e[K\e[30;12H\e[?25h"
+  - delay: 1064
+    content: "\e[?25l"
+  - delay: 15
+    content: "\rdocchat>\e[K\r\n\e[K\e[30;10H\e[?25h"
+  - delay: 252
+    content: "\e[?25l"
+  - delay: 16
+    content: "\rdocchat>\e[K\r\n\e[K\e[30;10H\e[?25h"
+  - delay: 629
+    content: "\e[?25l\rTraceback (most recent call last):\r\n  File \"c:\\Users\\ma386\\CS40 projects\\docchat\\testing.py\", line 228, in <module>\r\n    text = input('docchat> ')\e[172C\r\n           ^^^^^^^^^^^^^^^^^^\e[172C\r\nKeyboardInterrupt\e[184C\r\n\e[201C"
+  - delay: 520
+    content: "\rPS C:\\Users\\ma386\\CS40 projects\\docchat> "
+  - delay: 1118
+    content: "\e[93me\e[?25h"
+  - delay: 53
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\bex\e[?25h"
+  - delay: 54
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[31;42Hexi\e[?25h"
+  - delay: 80
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[92m\e[31;42Hexit\e[?25h"
+  - delay: 98
+    content: "\e[m"
+  - delay: 10
+    content: "\r\n"
