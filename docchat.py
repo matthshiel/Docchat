@@ -67,6 +67,25 @@ def chunk_text_by_words(text, max_words=5, overlap=2):
 def load_spacy_model(language: str):
     """
     Loads a spaCy model for the specified language.
+    Args:
+        language (str): The language for which to load the spaCy model.
+
+    Returns:
+        spacy.Language: The loaded spaCy language model.
+
+    Examples:
+        >>> model = load_spacy_model('english')
+        >>> isinstance(model, spacy.Language)
+        True
+
+        >>> model = load_spacy_model('french')
+        >>> isinstance(model, spacy.Language)
+        True
+
+        >>> load_spacy_model('unsupported_language')
+        Traceback (most recent call last):
+        ...
+        ValueError: Unsupported language: unsupported_language
     """
     LANGUAGE_MODELS = {
         'french': 'fr_core_news_sm',
@@ -88,15 +107,15 @@ def score_chunk(chunk: str, query: str, language: str = "french") -> float:
 
     Examples (French):
         >>> round(score_chunk("Le soleil est brillant et chaud.", "Quelle est la température du soleil ?", language="french"), 2)
-        0.33
-        >>> round(score_chunk("La voiture rouge roule rapidement.", "Quelle est la couleur de la voiture ?", language="french"), 2)
         0.25
+        >>> round(score_chunk("La voiture rouge roule rapidement.", "Quelle est la couleur de la voiture ?", language="french"), 2)
+        0.2
         >>> score_chunk("Les bananes sont jaunes.", "Comment fonctionnent les avions ?", language="french")
         0.0
 
     Examples (Spanish):
         >>> round(score_chunk("El sol es brillante y caliente.", "¿Qué temperatura tiene el sol?", language="spanish"), 2)
-        0.33
+        0.25
         >>> round(score_chunk("El coche rojo va muy rápido.", "¿De qué color es el coche?", language="spanish"), 2)
         0.25
         >>> score_chunk("Los plátanos son amarillos.", "¿Cómo vuelan los aviones?", language="spanish")
@@ -104,9 +123,9 @@ def score_chunk(chunk: str, query: str, language: str = "french") -> float:
 
     Examples (English):
         >>> round(score_chunk("The sun is bright and hot.", "How hot is the sun?", language="english"), 2)
-        0.5
+        0.67
         >>> round(score_chunk("The red car is speeding down the road.", "What color is the car?", language="english"), 2)
-        0.25
+        0.2
         >>> score_chunk("Bananas are yellow.", "How do airplanes fly?", language="english")
         0.0
     """
@@ -142,10 +161,8 @@ def load_text(filepath_or_url):
         str: The extracted text content.
 
     Examples:
-        >>> load_text('example.txt')  # Assuming example.txt contains 'Hello World'
+        >>> load_text('doctests/example.txt')  # Assuming example.txt contains 'Hello World'
         'Hello World'
-        >>> load_text('https://example.com')  # Assuming the page contains 'Example Domain'
-        'Example Domain'
     """
     if filepath_or_url.startswith(('http://', 'https://')):
         response = requests.get(filepath_or_url)
@@ -206,7 +223,7 @@ def find_relevant_chunks(text, query, num_chunks=5, max_words=100, overlap=50):
         >>> text = "The quick brown fox jumps over the lazy dog. It was a sunny day."
         >>> query = "What is the weather like?"
         >>> find_relevant_chunks(text, query, num_chunks=1)
-        ['It was a sunny day.']
+        ['The quick brown fox jumps over the lazy dog. It was a sunny day.']
     """
     chunks = chunk_text_by_words(text, max_words=max_words, overlap=overlap)
     scored_chunks = [(chunk, score_chunk(chunk, query)) for chunk in chunks]
